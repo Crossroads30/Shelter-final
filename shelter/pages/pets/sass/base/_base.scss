@@ -1,0 +1,67 @@
+html {
+   scroll-behavior: smooth;
+   font-size: 10px;
+}
+
+body {
+   font-size: 1.6rem;
+}
+
+body._lock {
+   overflow: hidden;
+}
+
+body:after {
+   opacity: 0;
+   content: '';
+}
+
+body._open:after {
+   content: '';
+   width: 100vw;
+   background-color: $color-dark-3xl;
+   opacity: .95;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   position: fixed;
+   @extend %transition;
+}
+
+a {
+   display: block;
+   text-decoration: none;
+   outline: none;
+   cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+   cursor: default;
+}
+
+h2 {
+   @include font ($size: 4.4rem, $height: 130%);
+   color: $color-dark-1;
+}
+
+h3 {
+   @include font ($size: 3.5rem, $height: 130%);
+   letter-spacing: 0.06em;
+   color: $color-dark-1;
+}
+
+h4 {
+   @include font ($size: 2rem, $height: 2.3rem);
+   letter-spacing: 0.06em;
+   color: $color-dark-1;
+}
+
+h5 {
+   @include font ($size: 1.5rem, $height: 110%);
+   letter-spacing: 0.06em;
+   color: $color-dark-1;
+}

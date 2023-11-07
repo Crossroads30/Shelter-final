@@ -1,0 +1,241 @@
+.help {
+   max-width: 100%;
+   min-width: $mobile-width;
+}
+
+.help__title {
+   width: 308px;
+   text-align: center;
+   margin-bottom: 60px;
+   text-indent: -3px;
+
+   @media screen and (max-width:$brake2) {
+      width: 220px;
+      font-size: 25px;
+      line-height: 130%;
+      margin-bottom: 42px;
+   }
+}
+
+.help__list {
+   @include flex();
+   width: 100%;
+
+   a {
+      outline: none;
+   }
+}
+
+.help-list__items {
+   @include flex ($flex-dir: row, $just-cont: space-between);
+   width: 100%;
+   flex-wrap: wrap;
+}
+
+.help-icon {
+   padding: 0 3.1% 50px;
+
+   @media screen and (max-width:$brake1080) {
+      padding: 0 7% 50px;
+   }
+
+   h4 {
+      margin-bottom: 3px;
+   }
+
+   h4 {
+      @media screen and (max-width:$brake4) {
+         font-size: 15px;
+         line-height: 110%;
+      }
+   }
+}
+
+.help-icon__link {
+   @include flex ();
+   width: 100%;
+   border-bottom: 3px solid transparent;
+   @extend %transition;
+
+   &:hover {
+      border-color: $color-primary;
+   }
+}
+
+.food {
+   @media screen and (max-width:$brake1080) {
+      padding: 0 4% 55px;
+   }
+
+   @media screen and (max-width:$brake820) {
+      padding: 0 7% 50px;
+   }
+
+   @media screen and (max-width:$brake2) {
+      padding: 0 10% 25px;
+   }
+
+   @media screen and (max-width:$brake4) {
+      padding: 0 11% 25px;
+   }
+}
+
+.transportation {
+   @media screen and (max-width:$brake1080) {
+      padding: 0 17% 55px;
+   }
+
+   @media screen and (max-width:$brake820) {
+      padding: 0 8% 50px;
+   }
+
+   @media screen and (max-width:$brake2) {
+      padding: 0 8% 25px;
+   }
+
+   @media screen and (max-width:$brake4) {
+      padding: 0 3.5% 25px;
+   }
+}
+
+.toys {
+   @media screen and (max-width:$brake1080) {
+      padding: 0 5% 55px;
+   }
+
+   @media screen and (max-width:$brake820) {
+      padding: 0 8.5% 50px;
+   }
+
+   @media screen and (max-width:$brake2) {
+      padding: 0 12% 25px;
+   }
+
+   @media screen and (max-width:$brake4) {
+      padding: 0 13.5% 25px;
+   }
+}
+
+.bowls {
+   @media screen and (max-width:$brake1080) {
+      padding: 0 0.5% 55px;
+   }
+
+   @media screen and (max-width:$brake820) {
+      padding: 0 0.5% 50px;
+   }
+
+   @media screen and (max-width:$brake2) {
+      padding: 0 7.5% 25px;
+   }
+
+   @media screen and (max-width:$brake4) {
+      padding: 0 3% 25px;
+   }
+}
+
+.shampoos {
+   @media screen and (max-width:$brake1080) {
+      padding: 0 21% 55px 20%;
+   }
+
+   @media screen and (max-width:$brake820) {
+      padding: 0 12% 50px;
+   }
+
+   @media screen and (max-width:$brake2) {
+      padding: 0 9% 25px;
+   }
+
+   @media screen and (max-width:$brake4) {
+      padding: 0 9% 25px;
+   }
+}
+
+.vitamins {
+   margin-left: 8%;
+   padding-bottom: 0;
+
+   @media screen and (max-width:$brake1080) {
+      margin-left: 0;
+      padding: 0 3% 55px;
+   }
+
+   @media screen and (max-width:$brake820) {
+      padding: 0 6% 50px;
+   }
+
+   @media screen and (max-width:$brake2) {
+      padding: 0 12% 25px;
+   }
+
+   @media screen and (max-width:$brake4) {
+      padding: 0 11% 25px;
+   }
+}
+
+.medicines {
+   padding-bottom: 0;
+
+   @media screen and (max-width:$brake1080) {
+      padding: 0 3%;
+      align-self: flex-start;
+   }
+
+   @media screen and (max-width:$brake820) {
+      padding: 0 5%;
+   }
+
+   @media screen and (max-width:$brake2) {
+      padding: 0 9% 25px;
+   }
+
+   @media screen and (max-width:$brake4) {
+      padding: 0 9% 25px;
+   }
+}
+
+.collars {
+   padding-bottom: 0;
+
+   @media screen and (max-width:$brake1080) {
+      padding: 0 8%;
+      align-self: flex-start;
+   }
+
+   @media screen and (max-width:$brake820) {
+      padding: 0 8%;
+
+   }
+
+   @media screen and (max-width:$brake2) {
+      padding: 0 7% 25px;
+   }
+
+   @media screen and (max-width:$brake4) {
+      padding: 0 1% 25px;
+   }
+}
+
+.sleeping-areas {
+   padding-bottom: 0;
+   padding-right: 11%;
+
+   @media screen and (max-width:$brake1080) {
+      margin-right: 0;
+      padding: 0 0.5%;
+      align-self: flex-start;
+   }
+
+   @media screen and (max-width:$brake820) {
+      padding: 0 2%;
+   }
+
+   @media screen and (max-width:$brake2) {
+      padding: 0 6%;
+   }
+
+   @media screen and (max-width:$brake4) {
+      padding: 0 3.5%;
+   }
+}

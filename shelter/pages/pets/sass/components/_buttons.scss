@@ -1,0 +1,70 @@
+.pet-card__button {
+   @include button(transparent, $color-primary);
+   margin-bottom: 30px;
+   @extend %transition;
+}
+
+.pet-card:hover .pet-card__button {
+   @extend %background-primary-light;
+   border-color: transparent;
+}
+
+.pets-navigation {
+   &__button {
+      @include flex ();
+      border: 2px solid #F1CDB3;
+      border-radius: 100px;
+      width: 52px;
+      height: 52px;
+      background: transparent;
+      transition: all .2s;
+   }
+
+   .pets {
+      &__navigation {}
+   }
+
+}
+
+.button1 {
+   border-color: $color-dark-s;
+   color: $color-dark-s;
+   cursor: default;
+   //&:hover {
+   //  background: #FDDCC4;
+   //  border-color:transparent;
+   //  color: $color-dark-3x;
+   // }
+}
+
+.button2 {
+   border-color: $color-dark-s;
+   color: $color-dark-s;
+   cursor: default;
+   //  &:hover {
+   //    background: #FDDCC4;
+   //    border-color:transparent;
+   //    color: $color-dark-3x;
+   // }
+}
+
+.button3 {
+   background: $color-primary;
+   border-color: transparent;
+}
+
+.button4 {
+   &:hover {
+      background: #FDDCC4;
+      border-color: transparent;
+      color: $color-dark-3xl;
+   }
+}
+
+.button5 {
+   &:hover {
+      background: #FDDCC4;
+      border-color: transparent;
+      color: $color-dark-3xl;
+   }
+}

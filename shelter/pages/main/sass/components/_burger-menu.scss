@@ -1,0 +1,36 @@
+.burger {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.burger__navigation {
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  padding-top: 158px;
+  background: $color-dark-3xl;
+  z-index: 5;
+  @extend %transition;
+}
+
+.burger__menu {
+  @include flex();
+  margin: 0 auto;
+}
+
+.burger__item {
+  margin-bottom: 40px;
+}
+
+.burger__navigation._active {
+  right: 0;
+  @extend %transition;
+  overflow: scroll;
+}

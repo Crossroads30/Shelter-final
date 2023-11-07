@@ -1,0 +1,25 @@
+.not-only__image {
+   width: 698px;
+}
+
+.in-addition {
+   &__image {
+      width: 505px;
+   }
+}
+
+.footer__image {
+   width: 300px;
+
+   @media screen and (max-width:$brake1) {
+      margin: 38px 0 0 50%;
+      transform: translate(-50%);
+   }
+
+   @media screen and (max-width:$brake2) {
+      margin: 0;
+      align-self: center;
+      width: 260px;
+      transform: none;
+   }
+}

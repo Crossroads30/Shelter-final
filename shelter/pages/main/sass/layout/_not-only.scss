@@ -1,0 +1,58 @@
+.not-only {
+  @include flex (center, row, space-between);
+  max-width: 100%;
+  min-width: $mobile-width;
+  padding: 0 40px;
+
+  @media screen and (max-width: $brake1) {
+    @include flex ($align-items: stretch);
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+.not-only__content {
+  @include flex ();
+  align-items: flex-start;
+  max-width: 460px;
+  padding-bottom: 80px;
+
+  @media screen and (max-width: $brake1) {
+    max-width: 100%;
+    padding: 0 154px;
+  }
+
+  @media screen and (max-width: $brake2) {
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.not-only__title {
+  color: $color-light-xl;
+  max-width: 310px;
+
+  @media screen and (max-width: $brake2) {
+    @include font (2.5rem, 130%);
+    text-align: center;
+    max-width: 260px;
+    letter-spacing: 0.06em;
+
+  }
+}
+
+.not-only__subtitle {
+  @include paragraph-1();
+  color: $color-dark-s;
+  margin: 42px 0;
+  align-items: center;
+  text-align: left;
+
+  @media screen and (max-width: $brake2) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: $brake2) {
+    max-width: 300px;
+  }
+}

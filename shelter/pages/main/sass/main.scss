@@ -1,0 +1,26 @@
+@import 'base/reset';
+//-----------------------------
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+//----------------------------
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/wrappers';
+@import 'base/conteiner';
+@import 'base/modal';
+//---------------------------
+@import 'components/buttons';
+@import 'components/images';
+@import 'components/logo';
+@import 'components/burger-menu';
+@import 'components/burger-logo';
+//---------------------------
+@import 'layout/starting-block';
+@import 'layout/header';
+@import 'layout/not-only';
+@import 'layout/about';
+@import 'layout/our-friends';
+@import 'layout/help';
+@import 'layout/in-addition';
+@import 'layout/footer';

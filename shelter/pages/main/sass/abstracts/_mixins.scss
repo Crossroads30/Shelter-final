@@ -1,0 +1,33 @@
+@mixin flex ($align-items: center, $flex-dir: column, $just-cont: center) {
+   display: flex;
+   align-items: $align-items;
+   justify-content: $just-cont;
+   flex-direction: $flex-dir;
+}
+
+@mixin font ($size, $height, $style: normal, $weight: 400, $family: 'Georgia') {
+   font-family: $family;
+   font-style: $style;
+   font-weight: $weight;
+   font-size: $size;
+   line-height: $height;
+}
+
+@mixin paragraph-1 () {
+   font-family: 'Arial';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 160%;
+}
+
+@mixin button ($background, $border-color) {
+   @include font (1.7rem, 130%);
+   padding: 13px 43px;
+   letter-spacing: 0.06em;
+   border-radius: 100px;
+   color: $color-dark-3xl;
+   background: $background;
+   border-color: $border-color;
+   border: 2px solid $color-primary;
+}

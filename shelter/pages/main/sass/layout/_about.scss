@@ -1,0 +1,33 @@
+.about {
+   max-width: 100%;
+}
+
+.about__content {
+   @include flex ();
+   align-items: flex-start;
+   max-width: 430px;
+}
+
+.about__title {
+   max-width: 370px;
+
+   @media screen and (max-width:$brake2) {
+      @include font (2.5rem, 130%);
+      max-width: 280px;
+      align-self: center;
+      text-align: center;
+      margin-bottom: 25px;
+   }
+}
+
+.about__subtitle {
+   @include paragraph-1 ();
+   margin-top: 25px;
+
+   @media screen and (max-width:$brake2) {
+      max-width: 270px;
+      text-align: justify;
+      align-self: center;
+      margin: 0 0 22px;
+   }
+}

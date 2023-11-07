@@ -1,0 +1,80 @@
+.not-only__image {
+   max-width: 100%;
+   height: auto;
+
+   @media screen and (max-width: $brake1) {
+      max-width: 570px;
+      align-self: flex-end;
+      margin: 100px 30px 0 0;
+   }
+
+   @media screen and (max-width: $brake2) {
+      max-width: 260px;
+      margin-top: 105px;
+      margin-right: 9px;
+   }
+}
+
+.about__image {
+   max-width: 100%;
+   align-self: flex-end;
+   margin-right: 30px;
+
+   @media screen and (max-width: $brake1080) {
+      order: 2;
+      margin-top: 80px;
+      align-self: center;
+      margin-right: 0;
+      max-width: 300px;
+   }
+
+   @media screen and (max-width:$brake2) {
+      margin-top: 20px;
+      max-width: 260px;
+   }
+}
+
+.slider__arrow {
+   width: 14px;
+}
+
+.help-icon__image {
+   max-width: 100%;
+   margin-bottom: 30px;
+
+   @media screen and (max-width:$brake4) {
+      width: 50px;
+      margin-bottom: 20px;
+   }
+}
+
+.in-addition__image {
+   max-width: 100%;
+
+   @media screen and (max-width:$brake1) {
+      order: 2;
+      align-self: flex-end;
+   }
+
+   @media screen and (max-width:$brake2) {
+      align-self: flex-end;
+      width: 260px;
+      margin-right: 20px;
+   }
+}
+
+.footer__image {
+   width: 300px;
+
+   @media screen and (max-width:$brake1) {
+      margin: 38px 0 0 50%;
+      transform: translate(-50%);
+   }
+
+   @media screen and (max-width:$brake2) {
+      margin: 0;
+      align-self: center;
+      width: 260px;
+      transform: none;
+   }
+}

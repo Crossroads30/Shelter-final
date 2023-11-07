@@ -1,0 +1,22 @@
+@import 'base/reset';
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+//----------------------------
+@import 'base/fonts';
+@import 'base/base';
+@import 'base/conteiner';
+@import 'base/wrappers';
+//---------------------------
+@import 'components/buttons';
+@import 'components/icons';
+@import 'components/images';
+@import 'components/logo';
+@import 'components/burger-menu';
+@import 'components/burger-logo';
+@import 'components/logo';
+//---------------------------
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/our-friends';

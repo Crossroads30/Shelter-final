@@ -1,0 +1,13 @@
+.logo__title {
+   @include flex();
+   @include font (3.2rem, 110%);
+   letter-spacing: 0.06em;
+   color: $color-dark-1;
+}
+
+.logo__subtitle {
+   @include font (1.3rem, 1.5rem, $family: 'Arial');
+   color: $color-dark-3xl;
+   letter-spacing: 0.1em;
+   padding: 10px 0 0;
+}

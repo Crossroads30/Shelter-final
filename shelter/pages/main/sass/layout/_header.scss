@@ -1,0 +1,60 @@
+.header {
+   @include flex(center, row, space-between);
+   position: relative;
+   padding: 30px 40px 90px;
+
+   @media screen and (max-width: $brake1) {
+      padding: 30px 30px 60px;
+   }
+
+   @media screen and (max-width: $brake3) {
+      padding: 30px 20px 60px;
+   }
+   a {
+      outline: none;
+
+   }
+}
+
+.logo__title {
+   @include flex();
+   @include font (3.2rem, 110%);
+   letter-spacing: 0.06em;
+   color: $color-primary;
+}
+
+.logo__subtitle {
+   @include font (1.3rem, 1.5rem, $family: 'Arial');
+   color: $color-light-xl;
+   letter-spacing: 0.1em;
+   padding: 10px 0 0;
+}
+
+.navigation__menu {
+   @include flex(center, row, space-between);
+   width: 443px;
+
+   @media screen and (max-width: $brake2) {
+      display: none;
+   }
+}
+
+.menu__link {
+   color: $color-dark-s;
+   @include paragraph-1();
+   @extend %transition;
+
+   &:hover {
+      color: $color-light-s;
+   }
+}
+
+.item--active {
+   border-bottom: 3px solid $color-primary;
+   pointer-events: none;
+}
+
+.link--active {
+   color: $color-light-s;
+
+}

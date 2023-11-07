@@ -1,0 +1,54 @@
+.header {
+   max-width: 100%;
+   min-width: $mobile-width;
+}
+
+.header__content {
+   @include flex(center, row, space-between);
+   position: relative;
+   padding: 30px 40px 30px;
+
+   @media screen and (max-width: $brake1) {
+      padding: 30px 30px 30px;
+   }
+
+
+   @media screen and (max-width: $brake2) {
+      padding: 30px 20px 30px;
+   }
+
+   a {
+      outline: none;
+   }
+}
+
+
+
+.navigation__menu {
+   @include flex(center, row, space-between);
+   width: 443px;
+
+   @media screen and (max-width: $brake2) {
+      display: none;
+   }
+}
+
+.menu__link {
+   color: $color-dark-1;
+   @include paragraph-1();
+   @extend %transition;
+
+   &:hover {
+      color: $color-dark-3xl;
+
+   }
+}
+
+.item--active {
+   border-bottom: 3px solid $color-primary;
+   pointer-events: none;
+}
+
+.link--active {
+   color: $color-dark-3xl;
+}

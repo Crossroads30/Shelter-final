@@ -1,0 +1,81 @@
+
+.not-only__button {
+   @include button($color-primary, transparent);
+   @extend %transition;
+
+   @media screen and (max-width: $brake1) {
+      align-self: center;
+   }
+
+   &:hover {
+      @extend %background-primary-light;
+   }
+}
+
+.slider__button {
+   @include flex ();
+   flex-shrink: 0;
+   width: 52px;
+   height: 52px;
+   border: 2px solid $color-primary;
+   border-radius: 100px;
+   @extend %transition;
+   &:hover {
+      @extend %background-primary-light;
+      border-color: transparent;
+
+   }
+
+}
+
+.arrow--left {
+   @media screen and (max-width:$brake2) {
+      order: 3;
+      align-self: flex-start;
+      margin-top: 20px;
+      margin-left: 58px;
+   }
+}
+
+.arrow--right {
+   transform: rotate(180deg);
+
+   @media screen and (max-width:$brake2) {
+      position: absolute;
+      order: 3;
+      align-self: flex-end;
+      bottom: 0;
+      right: 58px;
+   }
+}
+
+.pet-card__button {
+   @include button(transparent, $color-primary);
+   margin-bottom: 30px;
+   @extend %transition;
+}
+
+.pet-card:hover .pet-card__button {
+   @extend %background-primary-light;
+   border-color: transparent;
+}
+
+.our-friends__button {
+   @include button($color-primary, transparent);
+   margin-top: 60px;
+   @extend %transition;
+
+   &:hover {
+      @extend %background-primary-light;
+
+      border-color: transparent;
+   }
+
+   @media screen and (max-width:1080px) {
+      margin-top: 55px;
+   }
+
+   @media screen and (max-width:$brake3) {
+      margin-top: 42px;
+   }
+}

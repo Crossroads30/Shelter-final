@@ -1,0 +1,34 @@
+.wrapper {
+   max-width: $desktop-width;
+   min-width: $mobile-width;
+   margin: 0 auto;
+}
+
+.pets__wrapper {
+   @include flex ();
+   padding: 79px 40px 100px;
+
+   @media screen and (max-width: 1250px) {
+      padding: 80px 94px 75px;
+   }
+
+   @media screen and (max-width: $brake2) {
+      padding: 42px 0px;
+   }
+}
+
+.footer__wrapper {
+   @include flex ($flex-dir: row, $just-cont: space-between);
+   padding: 41px 40px 0;
+   flex-wrap: wrap;
+
+   @media screen and (max-width: $brake1) {
+      padding: 15px 64px 0;
+   }
+
+   @media screen and (max-width:$brake2) {
+      @include flex ();
+      padding: 27px 0 0;
+   }
+
+}

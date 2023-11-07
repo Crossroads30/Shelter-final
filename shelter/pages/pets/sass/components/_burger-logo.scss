@@ -1,0 +1,40 @@
+.burger__logo {
+  display: none;
+  cursor: pointer;
+  @extend %transition;
+
+  @media screen and (max-width: $brake2) {
+     display: block;
+     z-index: 10;
+     position: absolute;
+     right: 40px;
+     @include flex();
+     width: 30px;
+  }
+
+  @media screen and (max-width: $brake3) {
+     right: 20px;
+  }
+}
+
+.burger__logo._active {
+  transform: rotate(90deg);   
+}
+
+.logo__span._active {
+  border-color: #FAFAFA;
+}
+
+.logo__span {
+   display: block;
+   border: 1px solid;
+   border-color: $color-dark;
+   width: 100%;
+   margin-bottom: 10px;
+
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+
+
